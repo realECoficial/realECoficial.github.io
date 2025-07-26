@@ -25,8 +25,9 @@ enum Route {
  #[layout(NavBar)]
     #[route("/")]
     Presentacion {},
-    #[route("/codigo")]
+/*    #[route("/codigo")]
     Codigo {},
+*/  
     #[route("/wallpapers")]
     Wallpapers {},
     #[route("/estudios")]
@@ -39,8 +40,9 @@ enum Route {
     Seccion_util{},
     #[route("/musica")]
     Seccion_musica{},
-    #[route("/futuro")]
+/*    #[route("/futuro")]
     Seccion_futuro{},
+*/ 
     #[end_layout]
     #[route("/:..route")]
     PageNotFound { route: Vec<String> },

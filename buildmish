@@ -1,4 +1,0 @@
-#!/bin/bash
-
-dx build --release
-cp -r /home/ec/programas-ociosos/E.C-web/target/dx/e-c-web/release/web/public/* docs

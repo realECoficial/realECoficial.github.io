@@ -33,7 +33,7 @@ const IMAGEN_12_PNG: Asset = asset!("/assets/wallpapers/12.png");
 const IMAGEN_13_PNG: Asset = asset!("/assets/wallpapers/13.png");
 
 
-
+/*
 pub fn Codigo() -> Element {
     let mut filenames: Signal<Vec<String>> = use_signal(Vec::new);
     rsx!{
@@ -41,39 +41,11 @@ pub fn Codigo() -> Element {
         img {src: FOTOCODIGO} 
         a {href: "https://www.codewars.com/kata/5899642f6e1b25935d000161/train/rust", p{"Ejercicio en cuestion"}} 
         a {href: CODIGO, p{"codigo"}}
-        h1 {"Prueba de archivos!"} 
-        input {
-            // tell the input to pick a file
-            r#type: "file",
-            // list the accepted extensions
-            accept: ".txt,.rs",
-            // pick multiple files
-            multiple: true,
-            onchange: move |evt| {
-                if let Some(file_engine) = &evt.files() {
-                    let files = file_engine.files();
-                    for file_name in files {
-                        filenames.write().push(file_name);
-                    }
-                }
-                async move {
-                    if let Some(file_engine) = evt.files() {
-                        let files = file_engine.files();
-                        for file_name in &files {
-                            if let Some(file) = file_engine.read_file_to_string(file_name).await
-                            {
-                                filenames.write().push(file);
-                            }
-                        }
-                    }
-                }
-            }
-        }
 
     }
 
 }
-
+*/
 pub fn Wallpapers() -> Element {
     rsx!{
         h1 {"Wallpapers que tengo en el pc :p"}
@@ -148,14 +120,14 @@ pub fn Seccion_estudio_rust() -> Element {
              
             
             a {href: "https://dioxuslabs.com/learn/0.6/guide/routing/", 
-                h2 {  "YA TERMINE LA WEA XDDD" }
+                h2 {  "YA LA TERMINE XD" }
             } 
            
             a {href: "https://dioxuslabs.com/learn/0.6/router/example/first-route/", 
                 h2 {  "Dioxus: First Route." }
             } 
             a {href: MARCUS , 
-                h2 {  "Filosofia, Marcus Aurelius: Meditations (Pag 55)." }
+                h2 {  "Filosofia, Marcus Aurelius: Meditations (Pag 60)." }
             } 
             p {"Me encanta pero me pierdo en el ingles antiguo xD, voy a intentar hacer lo que dice " a {href:"https://www.susanrigetti.com/philosophy", p{"en la seccion 'How to study'."}}} 
              
@@ -392,7 +364,7 @@ const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
         
     }
 }
-
+/*
 #[component]
 pub fn Seccion_futuro() -> Element {
 
@@ -410,3 +382,4 @@ pub fn Seccion_futuro() -> Element {
 
     
 }
+*/

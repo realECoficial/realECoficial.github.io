@@ -10,9 +10,11 @@ pub fn NavBar() -> Element {
             Link { to: Route::Seccion_estudio_rust {}, 
                 h3 {"Estudios"}
             } // <------- add this Link
+           /* 
             Link { to: Route::Codigo {}, 
                 h3 {"Codigo :v"}
             } // <------- add this Link
+           */ 
             Link { to: Route::Seccion_linux_general {}, 
                 h3 {"Linux"}
             } // <------- add this Link
@@ -28,9 +30,9 @@ pub fn NavBar() -> Element {
             Link { to: Route::Wallpapers {}, 
                 h3 {"Wallpapers"}
             } // <------- add this Link
-            Link { to: Route::Seccion_futuro  {}, 
+/*            Link { to: Route::Seccion_futuro  {}, 
                 h3 {"Futuro"}
-            } // <------- add this Link
+            } */ // <------- add this Link
         }
         Outlet::<Route> {}
     }
