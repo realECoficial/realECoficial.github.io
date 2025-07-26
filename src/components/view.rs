@@ -406,7 +406,6 @@ pub fn Seccion_futuro() -> Element {
                 h2 {  "Quiero vivir en algo asi, aunque quiero aislarme màs." }
             } 
         }
-        h1 {"POR AHRA ACA PONDRE COSAS PARA PROBAR"}     
     }
 
     
