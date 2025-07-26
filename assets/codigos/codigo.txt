@@ -1,0 +1,29 @@
+fn merge_arrays(arr1: &[i32], arr2: &[i32]) -> Vec<i32> {
+    let arr11: Vec<i32> = arr1.to_vec(); // Create a vector from arr1
+    let mut arr22: Vec<i32> = arr2.to_vec(); // Create a vector from arr2
+    if arr1[0] == arr2[0]{
+        for i in 0..arr1.len()-1 {
+            if arr11[i] == arr22[i]{
+                arr22.retain(|&x| x != arr11[i]);
+            }
+        }
+    }
+    let mut arr: Vec<i32> = vec![arr11, arr22].concat();
+    let mut swapped = true;
+
+    let mut temp = 0;
+    while swapped {
+        swapped = false;
+        for i in 0..arr.len()-1 {
+            if arr[i] > arr[i + 1] {
+                temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
+                swapped = true;
+            } 
+        }
+    
+    }
+    return arr;
+}
+
