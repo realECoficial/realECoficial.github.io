@@ -31,7 +31,8 @@ const IMAGEN_10_PNG: Asset = asset!("/assets/wallpapers/10.png");
 const IMAGEN_11_PNG: Asset = asset!("/assets/wallpapers/11.png");
 const IMAGEN_12_PNG: Asset = asset!("/assets/wallpapers/12.png");
 const IMAGEN_13_PNG: Asset = asset!("/assets/wallpapers/13.png");
-
+//fotos
+const MICARA: Asset = asset!("/assets/fotosrandom/yopp.jpg");
 
 /*
 pub fn Codigo() -> Element {
@@ -75,14 +76,48 @@ pub fn Presentacion() -> Element {
         div { id: "rey",
          
             img { src: "https://avatars.githubusercontent.com/u/136939439?v=4"}, 
-            h1 {"E.C-WEB es mi web personal :v, dejare esto como repositorio."}
-            h1 {"Lo estare usando para trackear donde voy en mis estudios de:"}
-            h2 {"Rust"}
-            h2 {"Filosofia"}
+            
+            h1 {"E.C WEB. Es mi web personal :p, dejare esto como repositorio."}
+            h1 {"Lo estare usando para trackear en donde voy en mis estudios:"}
+            ol {
+                li { h2 {"Rust"} }
+                li { h2 {"Filosofia"} }
+            } 
         }
+    
     }
 }
 
+#[component]
+pub fn About_me() -> Element {
+    rsx!{
+        div { id: "about",
+         
+            
+             
+            h1 {"Hola, soy Emilio .C, me gusta: Leer, programar, indagar: cosas de linux, tecnologia, y esop :p"}
+            h1 {"Mis Lenguajes Based actuales son:",img { src: MICARA }, 
+                ol {
+                    li { "Rust" } 
+                },
+                "los antiguos:",
+                ol {
+                    li { "C/C++" } 
+                }
+            }
+            h1 {"Mis Lenguajes no tan basados son:", 
+                ol {
+                    li { "CacaScript" } 
+                    li { "Poop#" } 
+                    li { "Java" } 
+                    li { "Lazython" } 
+                },
+            }
+        }
+    
+    }
+}
+// ._.
 #[component]
 pub fn Indice() -> Element {
     rsx!{

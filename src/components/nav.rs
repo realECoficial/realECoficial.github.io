@@ -7,6 +7,9 @@ pub fn NavBar() -> Element {
             Link { to: Route::Presentacion {},
                 h3 { "Principal" }
             }
+            Link { to: Route::About_me {}, 
+                h3 {"About Me"}
+            } // <------- add this Link
             Link { to: Route::Seccion_estudio_rust {}, 
                 h3 {"Estudios"}
             } // <------- add this Link

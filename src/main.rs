@@ -28,6 +28,8 @@ enum Route {
 /*    #[route("/codigo")]
     Codigo {},
 */  
+    #[route("/aboutme")]
+    About_me {},
     #[route("/wallpapers")]
     Wallpapers {},
     #[route("/estudios")]

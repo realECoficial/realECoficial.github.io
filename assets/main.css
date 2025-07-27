@@ -9,6 +9,17 @@ body {
     margin-left: 192px;
 
 }
+#about{
+    padding-top: 1%;
+}
+#about img {
+    position: absolute;
+    z-index: -1;
+    padding-top: 1%; 
+    padding-left: 10%; 
+    height: 50%;
+    width: 30%;
+}
 
 #wallpapers img {
     height: 23%;
