@@ -3,15 +3,19 @@ use crate::Route;
 #[component]
 pub fn NavBar() -> Element {
     rsx! {
+        
         div { id: "title",
+           
+            img {id:"logo", src: "https://avatars.githubusercontent.com/u/136939439?v=4"} 
+            h2 {id:"logo-text", "Ec web!"}
             Link { to: Route::Presentacion {},
-                h3 { "Principal" }
+                h4 { "Principal" }
             }
             Link { to: Route::About_me {}, 
-                h3 {"About Me"}
+                h4 {"About Me"}
             } // <------- add this Link
             Link { to: Route::Seccion_estudio_rust {}, 
-                h3 {"Estudios"}
+                h4 {"Estudios"}
             } // <------- add this Link
            /* 
             Link { to: Route::Codigo {}, 
@@ -19,19 +23,19 @@ pub fn NavBar() -> Element {
             } // <------- add this Link
            */ 
             Link { to: Route::Seccion_linux_general {}, 
-                h3 {"Linux"}
+                h4 {"Linux"}
             } // <------- add this Link
             Link { to: Route::Seccion_util {}, 
-                h3 {"Util"}
+                h4 {"Util"}
             } // <------- add this Link
             Link { to: Route::Seccion_libros {}, 
-                h3 {"Libros"}
+                h4 {"Libros"}
             } // <------- add this Link
             Link { to: Route::Seccion_musica {}, 
-                h3 {"Musica"}
+                h4 {"Musica"}
             } // <------- add this Link
             Link { to: Route::Wallpapers {}, 
-                h3 {"Wallpapers"}
+                h4 {"Wallpapers"}
             } // <------- add this Link
 /*            Link { to: Route::Seccion_futuro  {}, 
                 h3 {"Futuro"}

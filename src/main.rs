@@ -13,6 +13,7 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
+
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         Router::<Route> {}
     

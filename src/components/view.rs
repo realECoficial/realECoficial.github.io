@@ -52,20 +52,22 @@ pub fn Wallpapers() -> Element {
         h1 {"Wallpapers que tengo en el pc :p"}
         div { id: "wallpapers",
 
-            img {src: IMAGEN_1_PNG} 
-            img {src: IMAGEN_2_PNG} 
-            img {src: IMAGEN_3_PNG} 
-            img {src: IMAGEN_4_PNG} 
-            img {src: IMAGEN_5_PNG} 
-            img {src: IMAGEN_6_PNG} 
-            img {src: IMAGEN_7_PNG} 
-            img {src: IMAGEN_8_PNG} 
-            img {src: IMAGEN_9_PNG} 
-            img {src: IMAGEN_10_PNG} 
-            img {src: IMAGEN_11_PNG} 
-            img {src: IMAGEN_12_PNG} 
-            img {src: IMAGEN_13_PNG} 
+            
+            a{target:"_blank",href: IMAGEN_1_PNG,img {id:"1",src: IMAGEN_1_PNG}}  
+            a{target:"_blank",href: IMAGEN_2_PNG,img {id:"2",src: IMAGEN_2_PNG}}  
+            a{target:"_blank",href: IMAGEN_3_PNG,img {id:"3",src: IMAGEN_3_PNG}}  
+            a{target:"_blank",href: IMAGEN_4_PNG,img {id:"4",src: IMAGEN_4_PNG}}  
+            a{target:"_blank",href: IMAGEN_5_PNG,img {id:"5",src: IMAGEN_5_PNG}}  
+            a{target:"_blank",href: IMAGEN_6_PNG,img {id:"6",src: IMAGEN_6_PNG}}  
+            a{target:"_blank",href: IMAGEN_7_PNG,img {id:"7",src: IMAGEN_7_PNG}}  
+            a{target:"_blank",href: IMAGEN_8_PNG,img {id:"8",src: IMAGEN_8_PNG}}  
+            a{target:"_blank",href: IMAGEN_9_PNG,img {id:"9",src: IMAGEN_9_PNG}}  
+            a{target:"_blank",href: IMAGEN_10_PNG,img {id:"10",src: IMAGEN_10_PNG}}  
+            a{target:"_blank",href: IMAGEN_11_PNG,img {id:"11",src: IMAGEN_11_PNG}}  
+            a{target:"_blank",href: IMAGEN_12_PNG,img {id:"12",src: IMAGEN_12_PNG}}  
+            a{target:"_blank",href: IMAGEN_13_PNG,img {id:"13",src: IMAGEN_13_PNG}}  
         } 
+     
     }
 
 }
@@ -77,7 +79,7 @@ pub fn Presentacion() -> Element {
          
             img { src: "https://avatars.githubusercontent.com/u/136939439?v=4"}, 
             
-            h1 {"E.C WEB. Es mi web personal :p, dejare esto como repositorio."}
+            h1 {"E.C WEB. Es mi web personal :p, dejare esto como ", a {target:"_blank",href: "https://github.com/realECoficial/realECoficial.github.io", {"repositorio"}}}
             h1 {"Lo estare usando para trackear en donde voy en mis estudios:"}
             ol {
                 li { h2 {"Rust"} }
@@ -96,7 +98,7 @@ pub fn About_me() -> Element {
             
              
             h1 {"Hola, soy Emilio .C, me gusta: Leer, programar, indagar: cosas de linux, tecnologia, y esop :p"}
-            h1 {"Mis Lenguajes Based actuales son:",img { src: MICARA }, 
+            h2 {"Mis Lenguajes Based actuales son:",img { src: MICARA }, 
                 ol {
                     li { "Rust" } 
                 },
@@ -105,7 +107,7 @@ pub fn About_me() -> Element {
                     li { "C/C++" } 
                 }
             }
-            h1 {"Mis Lenguajes no tan basados son:", 
+            h2 {"Mis Lenguajes no tan basados son:", 
                 ol {
                     li { "CacaScript" } 
                     li { "Poop#" } 
@@ -147,26 +149,22 @@ pub fn Seccion_estudio_rust() -> Element {
         div { id: "Texto",  
 
             h1 {"Seccion Estudios Generales"}
-            a {href: "https://doc.rust-lang.org/book/ch09-01-unrecoverable-errors-with-panic.html", 
+            a {target:"_blank",href: "https://doc.rust-lang.org/book/ch09-01-unrecoverable-errors-with-panic.html", 
                 h2 {  "Rust." }
             } 
-            p {"Me aburri de aprender asi que estoy practicando aca:", a {href: "https://www.codewars.com/kata/562f91ff6a8b77dfe900006e/train/rust", p{"codewars"}}} 
+            p {"Me aburri de aprender asi que estoy practicando aca:", a {target:"_blank",href: "https://www.codewars.com/", p{"codewars"}}} 
             p {"..."} 
              
             
-            a {href: "https://dioxuslabs.com/learn/0.6/guide/routing/", 
-                h2 {  "YA LA TERMINE XD" }
+            a {target:"_blank",href: "https://dioxuslabs.com/", 
+                h2 {  "Dioxus" }
             } 
-           
-            a {href: "https://dioxuslabs.com/learn/0.6/router/example/first-route/", 
-                h2 {  "Dioxus: First Route." }
+            p {"Este es el futuro colega"} 
+            a {target:"_blank",href: MARCUS , 
+                h2 {  "Filosofia, Marcus Aurelius: Meditations (Pag 69)." }
             } 
-            a {href: MARCUS , 
-                h2 {  "Filosofia, Marcus Aurelius: Meditations (Pag 60)." }
-            } 
-            p {"Me encanta pero me pierdo en el ingles antiguo xD, voy a intentar hacer lo que dice " a {href:"https://www.susanrigetti.com/philosophy", p{"en la seccion 'How to study'."}}} 
-             
-                 
+            p {"\"i thou musth embrace thyself for thee\" aahh ingles antiguo" }
+        
         }
     }
 }
@@ -180,16 +178,16 @@ pub fn Seccion_libros() -> Element {
         div { id: "Texto",  
 
             h1 {"Seccion Libros que recomiendo"}
-            a {href: LIBRO1, 
+            a {target:"_blank",href: LIBRO1, 
                 h2 {  "Roberto Bolaño - Los detectives salvajes" }
             } 
              
-            a {href: MARCUS , 
+            a {target:"_blank",href: MARCUS , 
                 h2 {  "Marcus Aurelius - Meditations." }
             } 
              
                  
-            a {href: LIBRO2, 
+            a {target:"_blank",href: LIBRO2, 
                 h2 {  "Osamu Dazai - Indigno de ser humano" }
             } 
         }
@@ -204,10 +202,10 @@ pub fn Seccion_linux_general() -> Element {
         div { id: "Texto",  
 
             h1 {"Seccion linux general"}
-            a {href: "https://github.com/realECoficial/dotfiles", 
+            a {target:"_blank",href: "https://github.com/realECoficial/dotfiles", 
                 h2 {  "Dotfiles personales" }
             } 
-            a {href: "https://nathan.rs/posts/dioxus-rust/#why-rust-for-front-end-development", 
+            a {target:"_blank",href: "https://nathan.rs/posts/dioxus-rust/#why-rust-for-front-end-development", 
                 h2 {  "Frontend Rust" }
             } 
             
@@ -226,22 +224,22 @@ pub fn Seccion_util() -> Element {
         div { id: "Texto",  
 
             h1 {"Seccion util"}
-            a {href: "https://www.susanrigetti.com/philosophy", 
+            a {target:"_blank",href: "https://www.susanrigetti.com/philosophy", 
                 h2 {  "Como aprender filosofia (Susan Rigetti)" }
             } 
-            a {href: "https://www.susanrigetti.com/physics", 
+            a {target:"_blank",href: "https://www.susanrigetti.com/physics", 
                 h2 {  "Como aprender fisica (Susan Rigetti)" }
             } 
         
-            a {href: "https://missing.csail.mit.edu/", 
+            a {target:"_blank",href: "https://missing.csail.mit.edu/", 
                 h2 {  "Clases/lectures de M.I.T de herramientas y curiosidades." }
             } 
         
-            a {href: "https://github.com/ivangabriele/mistralai-client-rs/", 
+            a {target:"_blank",href: "https://github.com/ivangabriele/mistralai-client-rs/", 
                 h2 {  "Mistral ia en rust :v." }
             } 
 
-            a {href: "https://odysee.com/@Luke:7/top-5-reasons-my-email-system-is:c", 
+            a {target:"_blank",href: "https://odysee.com/@Luke:7/top-5-reasons-my-email-system-is:c", 
                 h2 {  "MIL RAZONES POR TENER UN EMAIL SERVER." }
             } 
         }
@@ -267,7 +265,7 @@ pub fn Seccion_musica() -> Element {
             h2 {"(Esta primera parte se puede escuchar aca mismo, despues es todo youtube.)"} 
             br {}         
                 
-            a { id: "yamete",href: "https://www.music-map.de/", 
+            a {target:"_blank", id: "yamete",href: "https://www.music-map.de/", 
             h1 {  "PAGINA PARA VER MAPA HISTORICO DE LAS BANDAS QUE ESCUCHAS." }
             } 
             br {}         
@@ -282,118 +280,118 @@ const MUSIC7: Asset = asset!("/assets/musica/Madwreck-Ride.mp3");
 const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
 */
             
-            a {href: MUSIC1, 
-                h1 {  "Ocean_girl - perfect world." }
+            a {target:"_blank",href: MUSIC1, 
+                h2 {  "Ocean_girl - perfect world." }
             } 
             
-            a {href: MUSIC2, 
-                h1 {  "65 save" }
+            a {target:"_blank",href: MUSIC2, 
+                h2 {  "65 save" }
             } 
             
-            a {href: MUSIC3, 
-                h1 {  "Trugictra - Tasty (Fastracker)" }
+            a {target:"_blank",href: MUSIC3, 
+                h2 {  "Trugictra - Tasty (Fastracker)" }
             } 
 
-            a {href: MUSIC4, 
-                h1 {  "Substance - Them Phibez" }
+            a {target:"_blank",href: MUSIC4, 
+                h2 {  "Substance - Them Phibez" }
             } 
             
-            a {href: MUSIC5, 
-                h1 {  "40k! - NoRedeemingQualities" }
+            a {target:"_blank",href: MUSIC5, 
+                h2 {  "40k! - NoRedeemingQualities" }
             } 
-            a {href: MUSIC6, 
-                h1 {  "Harito - YOU" }
+            a {target:"_blank",href: MUSIC6, 
+                h2 {  "Harito - YOU" }
             } 
 
-            a {href: MUSIC7, 
-                h1 {  "Madwreck - Ride (Fastracker)" }
+            a {target:"_blank",href: MUSIC7, 
+                h2 {  "Madwreck - Ride (Fastracker)" }
             } 
-            a {href: MUSIC8, 
-                h1 {  "海神 - Watazumi" }
+            a {target:"_blank",href: MUSIC8, 
+                h2 {  "海神 - Watazumi" }
             } 
             br {}         
             h1 {"Esto para abajo es de youtube, TODO meter toda la musica xd."} 
             
 
-            a { id: "yamete",href: "https://y2mate.as/en-NO0b/", 
-                h1 {  "PAGINA PARA DESCARGAR YOUTUBE." }
+            a {target:"_blank", id: "yamete",href: "https://y2mate.as/en-NO0b/", 
+                h2 {  "PAGINA PARA DESCARGAR YOUTUBE." }
             } 
  //           
-            a {href: "https://www.youtube.com/watch?v=-NtjNCM0Kn4&list=RD-NtjNCM0Kn4&start_radio=1", 
-                h1 {  "Lamp - 君が泣くなら" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=-NtjNCM0Kn4&list=RD-NtjNCM0Kn4&start_radio=1", 
+                h2 {  "Lamp - 君が泣くなら" }
             } 
-            a {href: "https://www.youtube.com/watch?v=FGryJ9YTQzE&list=RDFGryJ9YTQzE&start_radio=1", 
-                h1 {  "Lamp - A都市の秋" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=FGryJ9YTQzE&list=RDFGryJ9YTQzE&start_radio=1", 
+                h2 {  "Lamp - A都市の秋" }
             } 
-            a {href: "https://www.youtube.com/watch?v=AJdTBPuZkHU&list=RDAJdTBPuZkHU&start_radio=1", 
-                h1 {  "Lamp - Yume Utsutsu" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=AJdTBPuZkHU&list=RDAJdTBPuZkHU&start_radio=1", 
+                h2 {  "Lamp - Yume Utsutsu" }
             } 
-            a {href: "https://www.youtube.com/watch?v=pXuZGo60sq8&list=RDpXuZGo60sq8&start_radio=1", 
-                h1 {  "the pillows - Bran-new Lovesong " }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=pXuZGo60sq8&list=RDpXuZGo60sq8&start_radio=1", 
+                h2 {  "the pillows - Bran-new Lovesong " }
             } 
-            a {href: "https://www.youtube.com/watch?v=xB2K-riHfSc&list=RDxB2K-riHfSc&start_radio=1", 
-                h1 {  "the pillows - LAST DINOSAUR " }
-            } 
-            
-            a {href: "https://www.youtube.com/watch?v=p-SWkpGKdP8&list=RDp-SWkpGKdP8&start_radio=1", 
-                h1 {  "American Football - Never Meant" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=xB2K-riHfSc&list=RDxB2K-riHfSc&start_radio=1", 
+                h2 {  "the pillows - LAST DINOSAUR " }
             } 
             
-            a {href: "https://www.youtube.com/watch?v=DMjMuWkAnPc", 
-                h1 {  "Trugictra - haparanda.mod (527 kb) (Official Video)" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=p-SWkpGKdP8&list=RDp-SWkpGKdP8&start_radio=1", 
+                h2 {  "American Football - Never Meant" }
             } 
             
-            a {href: "https://www.youtube.com/watch?v=aoTZmnF5Wg8", 
-                h1 {  "Trugictra - real_eyez.mod (346 kb) (Official Video)" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=DMjMuWkAnPc", 
+                h2 {  "Trugictra - haparanda.mod (527 kb) (Official Video)" }
             } 
             
-            a {href: "https://www.youtube.com/watch?v=1Mf8dn1dtK8", 
-                h1 {  "Trugictra -  acid32.mod (234 kb) (Official Video) " }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=aoTZmnF5Wg8", 
+                h2 {  "Trugictra - real_eyez.mod (346 kb) (Official Video)" }
             } 
-            a {href: "https://www.youtube.com/watch?v=XNYpjr4lxqU", 
-                h1 {  "Trugictra - shot_provoking.mod (362 kb) (Official Video)" }
+            
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=1Mf8dn1dtK8", 
+                h2 {  "Trugictra -  acid32.mod (234 kb) (Official Video) " }
             } 
-            a {href: "https://www.youtube.com/watch?v=_LaxE0mxT7I", 
-                h1 {  "Trugictra - lenheetii.mod (413 kb) (Official Video)" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=XNYpjr4lxqU", 
+                h2 {  "Trugictra - shot_provoking.mod (362 kb) (Official Video)" }
+            } 
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=_LaxE0mxT7I", 
+                h2 {  "Trugictra - lenheetii.mod (413 kb) (Official Video)" }
             } 
             
 //
-            a {href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
-                h1 {  "Susquatch - awakening at daybreak" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
+                h2 {  "Susquatch - awakening at daybreak" }
             } 
             
-            a {href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
-                h1 {  "save file 2" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
+                h2 {  "save file 2" }
                 
             } 
             
-            a {href: "https://www.youtube.com/watch?v=1Q0Fd66kgZM", 
-                h1 {  "Alaska - The Vortex / Invisible" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=1Q0Fd66kgZM", 
+                h2 {  "Alaska - The Vortex / Invisible" }
             } 
-            a {href: "https://www.youtube.com/watch?v=a_6quQ994JI", 
-                h1 {  "Sōtaisei Riron ( 相対性理论)-Synchroniciteen (Full Album)" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=a_6quQ994JI", 
+                h2 {  "Sōtaisei Riron ( 相対性理论)-Synchroniciteen (Full Album)" }
             } 
             
-            a {href: "https://www.youtube.com/watch?v=ODysC7SM_Yk", 
-                h1 {  "相対性理論 - 気になるあの娘" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=ODysC7SM_Yk", 
+                h2 {  "相対性理論 - 気になるあの娘" }
             } 
-            a {href: "https://www.youtube.com/watch?v=XOgFYjwEopo", 
-                h1 {  "rosenbridge" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=XOgFYjwEopo", 
+                h2 {  "rosenbridge" }
             } 
-            a {href: "https://www.youtube.com/watch?v=Q6YV_rpQ4Jk&list=PLB80A16AFA79B0379&index=3", 
-                h1 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Specials" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=Q6YV_rpQ4Jk&list=PLB80A16AFA79B0379&index=3", 
+                h2 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Specials" }
             } 
-            a {href: "https://www.youtube.com/watch?v=VEUZGwwP0FY&list=PLB80A16AFA79B0379&index=9", 
-                h1 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Level 2 Monster" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=VEUZGwwP0FY&list=PLB80A16AFA79B0379&index=9", 
+                h2 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Level 2 Monster" }
             } 
-            a {href: "https://www.youtube.com/watch?v=gpyuAT9q06c", 
-                h1 {  "rocket coaster" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=gpyuAT9q06c", 
+                h2 {  "rocket coaster" }
             } 
-            a {href: "https://www.youtube.com/watch?v=wHNSSbGDrfo", 
-                h1 {  "Owain Panchiko (DEATHMETAL Remix)" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=wHNSSbGDrfo", 
+                h2 {  "Owain Panchiko (DEATHMETAL Remix)" }
             } 
-            a {href: "https://www.youtube.com/watch?v=DuWQk4eA3lU", 
-                h1 {  "'Linebreak' (Amiga .mod!)" }
+            a {target:"_blank",href: "https://www.youtube.com/watch?v=DuWQk4eA3lU", 
+                h2 {  "'Linebreak' (Amiga .mod!)" }
             } 
         }
         
