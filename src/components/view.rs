@@ -190,6 +190,9 @@ pub fn Seccion_libros() -> Element {
             a {target:"_blank",href: LIBRO2, 
                 h2 {  "Osamu Dazai - Indigno de ser humano" }
             } 
+            a {target:"_blank",href: "https://archive.org/details/wall0000haus/page/4/mode/1up", 
+                h2 {  "The wall - Haushofer, Marlen, 1920-1970" }
+            } 
         }
     }
 }

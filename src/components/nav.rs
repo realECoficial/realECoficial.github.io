@@ -8,6 +8,10 @@ pub fn NavBar() -> Element {
            
             img {id:"logo", src: "https://avatars.githubusercontent.com/u/136939439?v=4"} 
             h2 {id:"logo-text", "Ec web!"}
+            
+            Link { to: Route::Presentacion {},
+                h4 { "Principal" }
+            }
             Link { to: Route::Presentacion {},
                 h4 { "Principal" }
             }

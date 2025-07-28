@@ -15,6 +15,7 @@ fn App() -> Element {
     rsx! {
 
         document::Link { rel: "stylesheet", href: MAIN_CSS }
+        document::Meta {name: "viewport", content:"width=device-width, initial-scale=1.0"}
         Router::<Route> {}
     
     }
