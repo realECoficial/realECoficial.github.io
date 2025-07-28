@@ -49,9 +49,9 @@ pub fn Codigo() -> Element {
 */
 pub fn Wallpapers() -> Element {
     rsx!{
-        h1 {"Wallpapers que tengo en el pc :p"}
-        div { id: "wallpapers",
+        div { class: "wallpap",id: "wallpapers",
 
+        h1 {"Wallpapers que tengo en el pc :p"}
             
             a{target:"_blank",href: IMAGEN_1_PNG,img {id:"1",src: IMAGEN_1_PNG}}  
             a{target:"_blank",href: IMAGEN_2_PNG,img {id:"2",src: IMAGEN_2_PNG}}  
@@ -75,7 +75,7 @@ pub fn Wallpapers() -> Element {
 #[component]
 pub fn Presentacion() -> Element {
     rsx!{
-        div { id: "rey",
+        div {class:"principal", id: "rey",
          
             img { src: "https://avatars.githubusercontent.com/u/136939439?v=4"}, 
             
@@ -93,7 +93,7 @@ pub fn Presentacion() -> Element {
 #[component]
 pub fn About_me() -> Element {
     rsx!{
-        div { id: "about",
+        div {class:"sobremi", id: "about",
          
             
              
@@ -146,7 +146,7 @@ pub fn Seccion_estudio_rust() -> Element {
     rsx! {
         br {id: "estudios"}         
         //hr { id: "lineas_separar"} 
-        div { id: "Texto",  
+        div {class:"noseya", id: "Texto",  
 
             h1 {"Seccion Estudios Generales"}
             a {target:"_blank",href: "https://doc.rust-lang.org/book/ch09-01-unrecoverable-errors-with-panic.html", 
@@ -175,7 +175,7 @@ pub fn Seccion_libros() -> Element {
     rsx! {
         br {id: "libros"}         
         //hr { id: "lineas_separar"} 
-        div { id: "Texto",  
+        div {class:"libros", id: "Texto",  
 
             h1 {"Seccion Libros que recomiendo"}
             a {target:"_blank",href: LIBRO1, 
@@ -202,7 +202,7 @@ pub fn Seccion_linux_general() -> Element {
     rsx! {
         br {id: "linux"}         
         //hr { id: "lineas_separar"} 
-        div { id: "Texto",  
+        div {class:"linux", id: "Texto",  
 
             h1 {"Seccion linux general"}
             a {target:"_blank",href: "https://github.com/realECoficial/dotfiles", 
@@ -224,7 +224,7 @@ pub fn Seccion_util() -> Element {
     rsx! {
         br {id: "Seccion_util"}         
         //hr { id: "lineas_separar"} 
-        div { id: "Texto",  
+        div {class:"util", id: "Texto",  
 
             h1 {"Seccion util"}
             a {target:"_blank",href: "https://www.susanrigetti.com/philosophy", 
@@ -260,9 +260,9 @@ pub fn Seccion_musica() -> Element {
         br {id:"musica"}         
         //hr { id: "lineas_separar"} 
 
-        div { id: "Texto",  
+        div {class:"musica", id: "Texto",  
 
-            h1 {"DISCLAIMER: quisiera que no utilizen plataformas de streaming(pagadas o no), de musica. Todas esas aplicaciones son de control mental."}
+            h1 {"DISCLAIMER: quisiera que no utilicen plataformas de streaming (pagadas o no) de mùsica. No se merecen tu tiempo u dinero."}
             h2 {"Si quieren escuchar musica les recomiendo que la descarguen o se la compren,"}
             h2 {"le da valor agregado."} 
             h2 {"(Esta primera parte se puede escuchar aca mismo, despues es todo youtube.)"} 

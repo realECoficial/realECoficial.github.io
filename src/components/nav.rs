@@ -4,7 +4,7 @@ use crate::Route;
 pub fn NavBar() -> Element {
     rsx! {
         
-        div { id: "title",
+        div {class:"nav", id: "title",
            
             img {id:"logo", src: "https://avatars.githubusercontent.com/u/136939439?v=4"} 
             h2 {id:"logo-text", "Ec web!"}

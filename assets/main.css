@@ -9,6 +9,45 @@ body {
 
     margin-left: 27%; 
     margin-right: 27%; 
+    box-sizing: border-box;
+}
+/*musica*/
+@media only screen and (max-width: 600px) {
+ .musica  {
+	font-size: 5px; 
+ }
+}
+/*libros*/
+@media only screen and (max-width: 600px) {
+ .libros  {
+	font-size: 5px; 
+ }
+}
+
+/*util*/
+@media only screen and (max-width: 600px) {
+ .util  {
+	font-size: 5px; 
+ }
+}
+
+/*linux*/
+@media only screen and (max-width: 600px) {
+ .linux  {
+	font-size: 5px; 
+ }
+}
+/*estudios*/
+@media only screen and (max-width: 600px) {
+ .noseya  {
+	font-size: 5px; 
+ }
+}
+
+@media only screen and (max-width: 600px) {
+ .sobremi {
+	font-size: 5px; 
+ }
 }
 #about{
     padding-top: 1%;
@@ -17,9 +56,25 @@ body {
     position: absolute;
     z-index: -1;
     padding-top: 1%; 
-    padding-left: 10%; 
+    padding-left: 3%; 
     height: auto;
-    width: 30%;
+    width: 23%;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .wallpap{
+	justify-content: center;	 
+    align-items: center;
+	font-size: 4px; 
+ 
+}
+ .wallpap img {
+ 
+   width: 10%;
+    height: auto;
+    padding: 0.003px;
+ }
 }
 #wallpapers img {
    /* height: 23%;
@@ -40,12 +95,25 @@ body {
 #wallpapers img:hover {
 opacity: 0.3;
 }
+@media only screen and (max-width: 600px) {
+ .nav h2,h4{
+ 
+    font-size 4px;
+    margin-left: 0% !important; 
+    margin-right: 0%!important; 
+}
+ .nav h4 {
+ 
+    margin-left: 5px !important; 
+ }
+}
 #title {
     
+    font-size: 0.781vw!important;
     margin-left: -27% !important; 
     margin-right: -27%!important; 
     background-color: #0f1116;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -76,24 +144,8 @@ opacity: 0.3;
     padding-bottom: 10%;
 }
 #title h4 {
-    padding:10px;
+    margin-left: 20px;
 }
-#logo {
-    
-}
-#logo-text {
-}
-#navbar {
-    
-	/*    
-	border-width: -px 0px 0px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*gap: 10px;*/
-	*/
-}
-
 
 #lineas_separar {
     color: red;
@@ -116,8 +168,7 @@ a:hover {
   text-decoration: none;
 }
 
-
-
+/*
 #indice {
 	
     display: flex;
@@ -127,11 +178,24 @@ a:hover {
     align-items: center;
 
 }
-
 #indice a {
     margin-top: -30px;
 }
 
+*/
+@media only screen and (max-width: 600px) {
+ .principal h1,ol{
+	 
+	font-size: 4px; 
+ }
+
+ .principal img {
+ 
+   width: 10%;
+    height: auto;
+    padding: 0.003px;
+ }
+}
 #rey {
     margin-top: 20px; 
     display: flex;
@@ -148,10 +212,6 @@ a:hover {
     border-radius: 50%; 
 }
 
-#rey img:hover {
-
-      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
 #Ec_prince {
     display: flex;
     flex-direction: column;
