@@ -109,10 +109,11 @@ pub fn About_me() -> Element {
             }
             h2 {"Mis Lenguajes no tan basados son:", 
                 ol {
-                    li { "CacaScript" } 
-                    li { "Poop#" } 
+                    li { "JavaScript" } 
+                    li { "c#" } 
                     li { "Java" } 
-                    li { "Lazython" } 
+                    li { "python" } 
+                    li { "php" } 
                 },
             }
         }

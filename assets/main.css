@@ -113,7 +113,6 @@ opacity: 0.3;
     margin-left: -27% !important; 
     margin-right: -27%!important; 
     background-color: #0f1116;
-    padding-bottom: 4px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -125,7 +124,6 @@ opacity: 0.3;
 }
 #title img {
 
-    padding-top: 0%;
     padding-right: 93%; 
     position: absolute;
     z-index: -1;
