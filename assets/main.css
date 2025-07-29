@@ -14,39 +14,39 @@ body {
 /*musica*/
 @media only screen and (max-width: 600px) {
  .musica  {
-	font-size: 7px; 
+	font-size: 5px; 
  }
 }
 /*libros*/
 @media only screen and (max-width: 600px) {
  .libros  {
-	font-size: 7px; 
+	font-size: 5px; 
  }
 }
 
 /*util*/
 @media only screen and (max-width: 600px) {
  .util  {
-	font-size: 7px; 
+	font-size: 5px; 
  }
 }
 
 /*linux*/
 @media only screen and (max-width: 600px) {
  .linux  {
-	font-size: 7px; 
+	font-size: 5px; 
  }
 }
 /*estudios*/
 @media only screen and (max-width: 600px) {
  .noseya  {
-	font-size: 7px; 
+	font-size: 5px; 
  }
 }
 
 @media only screen and (max-width: 600px) {
  .sobremi {
-	font-size: 7px; 
+	font-size: 5px; 
  }
 }
 #about{
@@ -66,7 +66,7 @@ body {
  .wallpap{
 	justify-content: center;	 
     align-items: center;
-	font-size: 7px; 
+	font-size: 5px; 
  
 }
  .wallpap img {
@@ -98,7 +98,7 @@ opacity: 0.3;
 @media only screen and (max-width: 600px) {
  .nav h2,h4{
  
-    font-size 6px;
+    font-size 4px;
     margin-left: 0% !important; 
     margin-right: 0%!important; 
 }
@@ -182,7 +182,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
  .principal h1,ol{
 	 
-	font-size: 4px; 
+	font-size: 5px; 
  }
 
  .principal img {
