@@ -112,8 +112,8 @@ pub fn About_me() -> Element {
                     li { "JavaScript" } 
                     li { "c#" } 
                     li { "Java" } 
-                    li { "python" } 
-                    li { "php" } 
+                    li { "Python" } 
+                    li { "Php" } 
                 },
             }
         }
