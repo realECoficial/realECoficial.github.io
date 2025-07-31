@@ -1,16 +1,15 @@
 use dioxus::prelude::*;
 use crate::Route;
+
+
 #[component]
 pub fn NavBar() -> Element {
     rsx! {
-        
         div {class:"nav", id: "title",
-           
             img {id:"logo", src: "https://avatars.githubusercontent.com/u/136939439?v=4"} 
             h2 {id:"logo-text", "Ec web!"}
-            
             Link { to: Route::Presentacion {},
-                h4 { "Principal" }
+                h4 {"Principal"}
             }
             Link { to: Route::About_me {}, 
                 h4 {"About Me"}
@@ -41,6 +40,9 @@ pub fn NavBar() -> Element {
 /*            Link { to: Route::Seccion_futuro  {}, 
                 h3 {"Futuro"}
             } */ // <------- add this Link
+        
+            //PRUEBA MALVADAD
+        
         }
         Outlet::<Route> {}
     }

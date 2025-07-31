@@ -96,19 +96,17 @@ body {
 opacity: 0.3;
 }
 @media only screen and (max-width: 600px) {
- .nav h2,h4{
- 
-    font-size 4px;
-    margin-left: 0% !important; 
-    margin-right: 0%!important; 
+ .nav h4{
+    font-size: 4px;
 }
- .nav h4 {
- 
-    margin-left: 5px !important; 
+ .nav img{
+    display: none; 
+ }
+ #logo-text {
+    display: none; 
  }
 }
 #title {
-    
     font-size: 0.781vw!important;
     margin-left: -27% !important; 
     margin-right: -27%!important; 

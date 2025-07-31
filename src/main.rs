@@ -52,7 +52,6 @@ enum Route {
     PageNotFound { route: Vec<String> },
 }
 
-
 #[component]
 fn PageNotFound(route: Vec<String>) -> Element {
     rsx! {

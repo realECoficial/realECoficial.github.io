@@ -1,20 +1,6 @@
 use dioxus::prelude::*;
 
 
-//libros
-const MARCUS: Asset = asset!("/assets/libros/Marcus-Aurelius-Meditations.pdf");
-const LIBRO1: Asset = asset!("/assets/libros/25 Roberto Bolaño - Los detectives salvajes.pdf");
-const LIBRO2: Asset = asset!("/assets/libros/Indigno-de-ser-humano.pdf");
-//musica
-const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
-const MUSIC2: Asset = asset!("/assets/musica/65_saves.mp3");
-const MUSIC3: Asset = asset!("/assets/musica/tasty_trugictra.mp3");
-const MUSIC4: Asset = asset!("/assets/musica/Substance - Them Phibez.mp3");
-const MUSIC5: Asset = asset!("/assets/musica/NoRedeemingQualities.mp3");
-const MUSIC6: Asset = asset!("/assets/musica/YOU.mp3");
-const MUSIC7: Asset = asset!("/assets/musica/Madwreck-Ride.mp3");
-const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
-
 const FOTOCODIGO: Asset = asset!("/assets/codigos/codewars.png");
 const CODIGO: Asset = asset!("/assets/codigos/codigo.txt");
 
@@ -82,8 +68,9 @@ pub fn Presentacion() -> Element {
             h1 {"E.C WEB. Es mi web personal :p, dejare esto como ", a {target:"_blank",href: "https://github.com/realECoficial/realECoficial.github.io", {"repositorio"}}}
             h1 {"Lo estare usando para trackear en donde voy en mis estudios:"}
             ol {
-                li { h2 {"Rust"} }
-                li { h2 {"Filosofia"} }
+                li { h2 {"Rust."} }
+                li { h2 {"Filosofia."} }
+                li { h2 {"Matematicas."} }
             } 
         }
     
@@ -150,26 +137,49 @@ pub fn Seccion_estudio_rust() -> Element {
         div {class:"noseya", id: "Texto",  
 
             h1 {"Seccion Estudios Generales"}
-            a {target:"_blank",href: "https://doc.rust-lang.org/book/ch09-01-unrecoverable-errors-with-panic.html", 
-                h2 {  "Rust." }
+            a {target:"_blank",href: "https://www.rust-lang.org/", 
+                h2 {  "Rust: Chapter 9." }
+                ol {
+                    li {a{target:"_blank", href:"https://doc.rust-lang.org/book/ch09-01-unrecoverable-errors-with-panic.html","Panic!"}} 
+                } 
+            }
+            a {target:"_blank",href: "https://www.codewars.com/users/realECoficial", 
+                h2{"Codewars: Ejercicios hechos."}
+                 
+                ol {
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0","Remove First and Last Character"}} 
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/589478160c0f8a40870000bc","Area of an arrow"}} 
+                } 
             } 
-            p {"Me aburri de aprender asi que estoy practicando aca:", a {target:"_blank",href: "https://www.codewars.com/", p{"codewars"}}} 
-            p {"..."} 
-             
-            
             a {target:"_blank",href: "https://dioxuslabs.com/", 
-                h2 {  "Dioxus" }
+                h2 {"Dioxus: " }
+                ol {
+                    li {a{target:"_blank", href:"https://realec-web.xyz/","Esta web"}} 
+                } 
             } 
-            p {"Este es el futuro colega"} 
             a {target:"_blank",href: MARCUS , 
-                h2 {  "Filosofia, Marcus Aurelius: Meditations (Pag 69)." }
+                h2 {  "Filosofia: " }
+                ol {
+                    li {a{target:"_blank", href: MARCUS,"Marcus Aurelius Meditations (FASE: 2)."}} 
+                } 
             } 
-            p {"\"i thou musth embrace thyself for thee\" aahh ingles antiguo" }
         
+            a {target:"_blank",href: "https://www.susanrigetti.com/math" , 
+                h2 {  "Matematicas." }
+            } 
+                ol {
+                    li {"TO-DO."} 
+                } 
         }
     }
 }
 
+
+//libros
+const MARCUS: Asset = asset!("/assets/libros/Marcus-Aurelius-Meditations.pdf");
+const LIBRO1: Asset = asset!("/assets/libros/25 Roberto Bolaño - Los detectives salvajes.pdf");
+const LIBRO2: Asset = asset!("/assets/libros/Indigno-de-ser-humano.pdf");
+const LIBRO3: Asset = asset!("/assets/libros/Nueva gramática básica de la lengua española.pdf");
 
 #[component]
 pub fn Seccion_libros() -> Element {
@@ -178,7 +188,7 @@ pub fn Seccion_libros() -> Element {
         //hr { id: "lineas_separar"} 
         div {class:"libros", id: "Texto",  
 
-            h1 {"Seccion Libros que recomiendo"}
+            h1 {"Repositorio de libros."}
             a {target:"_blank",href: LIBRO1, 
                 h2 {  "Roberto Bolaño - Los detectives salvajes" }
             } 
@@ -193,6 +203,9 @@ pub fn Seccion_libros() -> Element {
             } 
             a {target:"_blank",href: "https://archive.org/details/wall0000haus/page/4/mode/1up", 
                 h2 {  "The wall - Haushofer, Marlen, 1920-1970" }
+            } 
+            a {target:"_blank",href: LIBRO3, 
+                h2 {  "Nueva gramática básica de la lengua española" }
             } 
         }
     }
@@ -251,6 +264,16 @@ pub fn Seccion_util() -> Element {
     }
 }
 
+//musica
+const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
+const MUSIC2: Asset = asset!("/assets/musica/65_saves.mp3");
+const MUSIC3: Asset = asset!("/assets/musica/tasty_trugictra.mp3");
+const MUSIC4: Asset = asset!("/assets/musica/Substance - Them Phibez.mp3");
+const MUSIC5: Asset = asset!("/assets/musica/NoRedeemingQualities.mp3");
+const MUSIC6: Asset = asset!("/assets/musica/YOU.mp3");
+const MUSIC7: Asset = asset!("/assets/musica/Madwreck-Ride.mp3");
+const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
+
 
 #[component]
 pub fn Seccion_musica() -> Element {
@@ -263,140 +286,108 @@ pub fn Seccion_musica() -> Element {
 
         div {class:"musica", id: "Texto",  
 
-            h1 {"DISCLAIMER: quisiera que no utilicen plataformas de streaming (pagadas o no) de mùsica. No se merecen tu tiempo u dinero."}
-            h2 {"Si quieren escuchar musica les recomiendo que la descarguen o se la compren,"}
-            h2 {"le da valor agregado."} 
-            h2 {"(Esta primera parte se puede escuchar aca mismo, despues es todo youtube.)"} 
+            h2 {"DISCLAIMER: quisiera que no utilicen plataformas de streaming (pagadas o no) de mùsica. No se merecen tu tiempo u dinero."}
+            h3 {"Si quieren escuchar musica les recomiendo que la descarguen o se la compren,"}
+            h3 {"le da valor agregado."} 
+            h3 {"(Esta primera parte se puede escuchar aca mismo, despues es todo youtube.)"} 
             br {}         
                 
             a {target:"_blank", id: "yamete",href: "https://www.music-map.de/", 
-            h1 {  "PAGINA PARA VER MAPA HISTORICO DE LAS BANDAS QUE ESCUCHAS." }
+            h2 {  "PAGINA PARA VER MAPA HISTORICO DE LAS BANDAS QUE ESCUCHAS." }
             } 
             br {}         
-/* IGNORAR, es para no ir para arriba xd            
-const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
-const MUSIC2: Asset = asset!("/assets/musica/65_saves.mp3");
-const MUSIC3: Asset = asset!("/assets/musica/tasty_trugictra.mp3");
-const MUSIC4: Asset = asset!("/assets/musica/Substance - Them Phibez.mp3");
-const MUSIC5: Asset = asset!("/assets/musica/NoRedeemingQualities.mp3");
-const MUSIC6: Asset = asset!("/assets/musica/YOU.mp3");
-const MUSIC7: Asset = asset!("/assets/musica/Madwreck-Ride.mp3");
-const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
-*/
-            
-            a {target:"_blank",href: MUSIC1, 
-                h2 {  "Ocean_girl - perfect world." }
-            } 
-            
-            a {target:"_blank",href: MUSIC2, 
-                h2 {  "65 save" }
-            } 
-            
-            a {target:"_blank",href: MUSIC3, 
-                h2 {  "Trugictra - Tasty (Fastracker)" }
-            } 
-
-            a {target:"_blank",href: MUSIC4, 
-                h2 {  "Substance - Them Phibez" }
-            } 
-            
-            a {target:"_blank",href: MUSIC5, 
-                h2 {  "40k! - NoRedeemingQualities" }
-            } 
-            a {target:"_blank",href: MUSIC6, 
-                h2 {  "Harito - YOU" }
-            } 
-
-            a {target:"_blank",href: MUSIC7, 
-                h2 {  "Madwreck - Ride (Fastracker)" }
-            } 
-            a {target:"_blank",href: MUSIC8, 
-                h2 {  "海神 - Watazumi" }
-            } 
+            ol {
+                li{a {target:"_blank",href: MUSIC1,"Ocean_girl - perfect world."}}
             br {}         
-            h1 {"Esto para abajo es de youtube, TODO meter toda la musica xd."} 
+                li{a {target:"_blank",href: MUSIC2,"65 save"}}
+            br {}         
+                li{a {target:"_blank",href: MUSIC3,"Trugictra - Tasty (Fastracker)"}}
+            br {}         
+                li{a {target:"_blank",href: MUSIC4,"Substance - Them Phibez"}}
+            br {}         
+                li{a {target:"_blank",href: MUSIC5,"40k! - NoRedeemingQualities"}}
+            br {}         
+                li{a {target:"_blank",href: MUSIC6,"Harito - YOU"}}
+            br {}         
+                li{a {target:"_blank",href: MUSIC7,"Madwreck - Ride (Fastracker)"}}
             
-
+            br {}         
+                li{a {target:"_blank",href: MUSIC8,"海神 - Watazumi"}}
+            } 
+             
+           // seccion youtube 
+             
+            h2 {"Esto para abajo es de software propietario."} 
+            
             a {target:"_blank", id: "yamete",href: "https://y2mate.as/en-NO0b/", 
-                h2 {  "PAGINA PARA DESCARGAR YOUTUBE." }
+                h3 {  "Descargalas como mp3." }
             } 
- //           
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=-NtjNCM0Kn4&list=RD-NtjNCM0Kn4&start_radio=1", 
-                h2 {  "Lamp - 君が泣くなら" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=FGryJ9YTQzE&list=RDFGryJ9YTQzE&start_radio=1", 
-                h2 {  "Lamp - A都市の秋" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=AJdTBPuZkHU&list=RDAJdTBPuZkHU&start_radio=1", 
-                h2 {  "Lamp - Yume Utsutsu" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=pXuZGo60sq8&list=RDpXuZGo60sq8&start_radio=1", 
-                h2 {  "the pillows - Bran-new Lovesong " }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=xB2K-riHfSc&list=RDxB2K-riHfSc&start_radio=1", 
-                h2 {  "the pillows - LAST DINOSAUR " }
-            } 
+            br {}         
+            ol {
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=-NtjNCM0Kn4&list=RD-NtjNCM0Kn4&start_radio=1","Lamp - 君が泣くなら"}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=FGryJ9YTQzE&list=RDFGryJ9YTQzE&start_radio=1","Lamp - A都市の秋"}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=AJdTBPuZkHU&list=RDAJdTBPuZkHU&start_radio=1","Lamp - Yume Utsutsu"}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=pXuZGo60sq8&list=RDpXuZGo60sq8&start_radio=1","the pillows - Bran-new Lovesong "}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=xB2K-riHfSc&list=RDxB2K-riHfSc&start_radio=1","the pillows - LAST DINOSAUR"}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=p-SWkpGKdP8&list=RDp-SWkpGKdP8&start_radio=1","American Football - Never Meant"}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=DMjMuWkAnPc","Trugictra - haparanda.mod (527 kb) (Official Video)"}}
             
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=p-SWkpGKdP8&list=RDp-SWkpGKdP8&start_radio=1", 
-                h2 {  "American Football - Never Meant" }
-            } 
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=aoTZmnF5Wg8","Trugictra - real_eyez.mod (346 kb) (Official Video)"}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=1Mf8dn1dtK8","Trugictra - acid32.mod (234 kb) (Official Video)"}}
             
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=DMjMuWkAnPc", 
-                h2 {  "Trugictra - haparanda.mod (527 kb) (Official Video)" }
-            } 
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=XNYpjr4lxqU","Trugictra - shot_provoking.mod (362 kb) (Official Video)"}}
+             
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=_LaxE0mxT7I","Trugictra - lenheetii.mod (413 kb) (Official Video)"}}
+
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA","Susquatch - awakening at daybreak"}}
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA","save file 2"}}
             
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=aoTZmnF5Wg8", 
-                h2 {  "Trugictra - real_eyez.mod (346 kb) (Official Video)" }
-            } 
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=1Q0Fd66kgZM","Alaska - The Vortex / Invisible"}}
             
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=1Mf8dn1dtK8", 
-                h2 {  "Trugictra -  acid32.mod (234 kb) (Official Video) " }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=XNYpjr4lxqU", 
-                h2 {  "Trugictra - shot_provoking.mod (362 kb) (Official Video)" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=_LaxE0mxT7I", 
-                h2 {  "Trugictra - lenheetii.mod (413 kb) (Official Video)" }
-            } 
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=a_6quQ994JI","Sōtaisei Riron ( 相対性理论)-Synchroniciteen (Full Album)"}}
             
-//
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
-                h2 {  "Susquatch - awakening at daybreak" }
-            } 
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=ODysC7SM_Yk","相対性理論 - 気になるあの娘"}}
+
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=XOgFYjwEopo","rosenbridge"}}
             
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA", 
-                h2 {  "save file 2" }
-                
-            } 
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=Q6YV_rpQ4Jk&list=PLB80A16AFA79B0379&index=3","Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Specials"}}
             
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=1Q0Fd66kgZM", 
-                h2 {  "Alaska - The Vortex / Invisible" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=a_6quQ994JI", 
-                h2 {  "Sōtaisei Riron ( 相対性理论)-Synchroniciteen (Full Album)" }
-            } 
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=VEUZGwwP0FY&list=PLB80A16AFA79B0379&index=9","Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Level 2 Monster"}}
             
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=ODysC7SM_Yk", 
-                h2 {  "相対性理論 - 気になるあの娘" }
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=gpyuAT9q06c","rocket coaster"}}
+            
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=wHNSSbGDrfo","Owain Panchiko (DEATHMETAL Remix)"}}
+            
+            br {}         
+                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=DuWQk4eA3lU","'Linebreak' (Amiga .mod!)"}}
+            
+
             } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=XOgFYjwEopo", 
-                h2 {  "rosenbridge" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=Q6YV_rpQ4Jk&list=PLB80A16AFA79B0379&index=3", 
-                h2 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Specials" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=VEUZGwwP0FY&list=PLB80A16AFA79B0379&index=9", 
-                h2 {  "Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Level 2 Monster" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=gpyuAT9q06c", 
-                h2 {  "rocket coaster" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=wHNSSbGDrfo", 
-                h2 {  "Owain Panchiko (DEATHMETAL Remix)" }
-            } 
-            a {target:"_blank",href: "https://www.youtube.com/watch?v=DuWQk4eA3lU", 
-                h2 {  "'Linebreak' (Amiga .mod!)" }
-            } 
+             
+             
+             
+             
+             
         }
         
     }

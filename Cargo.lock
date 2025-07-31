@@ -1314,6 +1314,7 @@ name = "e-c-web"
 version = "0.1.0"
 dependencies = [
  "dioxus",
+ "freyr",
 ]
 
 [[package]]
@@ -1486,6 +1487,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456"
 dependencies = [
  "percent-encoding",
+]
+
+[[package]]
+name = "freyr"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6ed19a18ac4c777d6c86261cd20b2006eb4befc63a18d32a8c2690ba941dc2bd"
+dependencies = [
+ "dioxus",
+ "serde_json",
 ]
 
 [[package]]
