@@ -129,7 +129,8 @@ pub fn Indice() -> Element {
 }
 
 
-const LIBRO4: Asset = asset!("/assets/libros/Why Math_ (Undergraduate Texts in Mathematics).pdf");
+const ESTUDIO1: Asset = asset!("/assets/libros/Think. A Compelling Introduction To Philosophy.pdf");
+const ESTUDIO2: Asset = asset!("/assets/libros/Why Math_ (Undergraduate Texts in Mathematics).pdf");
 #[component]
 pub fn Seccion_estudio_rust() -> Element {
     rsx! {
@@ -141,7 +142,7 @@ pub fn Seccion_estudio_rust() -> Element {
             a {target:"_blank",href: "https://www.rust-lang.org/", 
                 h2 {  "Rust: Chapter 9." }
                 ol {
-                    li {a{target:"_blank", href:"https://doc.rust-lang.org/book/ch09-01-unrecoverable-errors-with-panic.html","Panic!"}} 
+                    li {a{target:"_blank", href:"https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator","A Shortcut for Propagating Errors: the ? Operator"}} 
                 } 
             }
             a {target:"_blank",href: "https://www.codewars.com/users/realECoficial", 
@@ -158,18 +159,18 @@ pub fn Seccion_estudio_rust() -> Element {
                     li {a{target:"_blank", href:"https://realec-web.xyz/","Esta web"}} 
                 } 
             } 
-            a {target:"_blank",href: MARCUS , 
+            a {target:"_blank",href: "https://www.susanrigetti.com/philosophy" , 
                 h2 {  "Filosofia: " }
-                ol {
-                    li {a{target:"_blank", href: MARCUS,"Marcus Aurelius Meditations (FASE: 2)."}} 
-                } 
             } 
+                ol {
+                    li {a{target:"_blank", href: ESTUDIO1,"Think. A Compelling Introduction To Philosophy"}} 
+                } 
         
             a {target:"_blank",href: "https://www.susanrigetti.com/math" , 
                 h2 {  "Matematicas." }
             } 
                 ol {
-                    li {a{target:"_blank", href: LIBRO4,"Why Math?"}} 
+                    li {a{target:"_blank", href: ESTUDIO2,"Why Math?"}} 
                 } 
         }
     }
