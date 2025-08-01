@@ -79,11 +79,11 @@ pub fn Presentacion() -> Element {
 
 #[component]
 pub fn About_me() -> Element {
-    rsx!{
+    rsx!{img {id:"MICARA", src: MICARA }
         div {class:"sobremi", id: "about",
+                 
          
             
-             img { src: MICARA }
             h1 {"Hola, soy Emilio .C, me gusta: Leer, programar, indagar: cosas de linux, tecnologia, y esop :p"}
             h2 {"Mis Lenguajes Based actuales son:", 
                 ol {

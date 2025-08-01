@@ -11,6 +11,13 @@ body {
     margin-right: 10%; 
     box-sizing: border-box;
 }
+
+@media only screen and (min-width: 601px) {
+body{
+    margin-left: 27%!important; 
+    margin-right: 27%!important; 
+}
+}
 /*musica*/
 @media only screen and (max-width: 600px) {
  .musica  {
@@ -54,7 +61,7 @@ body {
  .sobremi {
 	font-size: 1.1em; 
  }
- .sobremi img{
+ #MICARA{
   display: block!important;
   margin-left: auto!important;
   margin-right: auto;
@@ -67,14 +74,14 @@ body {
 #about{
     padding-top: 1%;
 }
-#about img {
+#MICARA{
     position: absolute;
     z-index: -1;
-    padding-top: 1%; 
-    padding-left: 3%; 
-    height: auto;
-    width: 70%;
- opacity: 0.3;
+    padding-top: 0%; 
+    padding-left: 0%; 
+    height: 80%;
+    width: 46%;
+    opacity: 0.3;
     border-radius: 5%;
 }
 
