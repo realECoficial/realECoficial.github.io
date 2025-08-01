@@ -83,9 +83,9 @@ pub fn About_me() -> Element {
         div {class:"sobremi", id: "about",
          
             
-             
+             img { src: MICARA }
             h1 {"Hola, soy Emilio .C, me gusta: Leer, programar, indagar: cosas de linux, tecnologia, y esop :p"}
-            h2 {"Mis Lenguajes Based actuales son:",img { src: MICARA }, 
+            h2 {"Mis Lenguajes Based actuales son:", 
                 ol {
                     li { "Rust" } 
                 },
@@ -129,6 +129,7 @@ pub fn Indice() -> Element {
 }
 
 
+const LIBRO4: Asset = asset!("/assets/libros/Why Math_ (Undergraduate Texts in Mathematics).pdf");
 #[component]
 pub fn Seccion_estudio_rust() -> Element {
     rsx! {
@@ -168,7 +169,7 @@ pub fn Seccion_estudio_rust() -> Element {
                 h2 {  "Matematicas." }
             } 
                 ol {
-                    li {"TO-DO."} 
+                    li {a{target:"_blank", href: LIBRO4,"Why Math?"}} 
                 } 
         }
     }
@@ -277,7 +278,6 @@ const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
 
 #[component]
 pub fn Seccion_musica() -> Element {
-    let mut count = String::from("");
 
 
     rsx! {
@@ -296,7 +296,7 @@ pub fn Seccion_musica() -> Element {
             h2 {  "PAGINA PARA VER MAPA HISTORICO DE LAS BANDAS QUE ESCUCHAS." }
             } 
             br {}         
-            ol {
+            ol { class:"musica-local",
                 li{a {target:"_blank",href: MUSIC1,"Ocean_girl - perfect world."}}
             br {}         
                 li{a {target:"_blank",href: MUSIC2,"65 save"}}
@@ -323,7 +323,7 @@ pub fn Seccion_musica() -> Element {
                 h3 {  "Descargalas como mp3." }
             } 
             br {}         
-            ol {
+            ol {class:"musica-youtube",
                 li{a {target:"_blank",href: "https://www.youtube.com/watch?v=-NtjNCM0Kn4&list=RD-NtjNCM0Kn4&start_radio=1","Lamp - 君が泣くなら"}}
             br {}         
                 li{a {target:"_blank",href: "https://www.youtube.com/watch?v=FGryJ9YTQzE&list=RDFGryJ9YTQzE&start_radio=1","Lamp - A都市の秋"}}

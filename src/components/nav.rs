@@ -5,8 +5,9 @@ use crate::Route;
 #[component]
 pub fn NavBar() -> Element {
     rsx! {
+        
+//            img {id:"logo", src: "https://avatars.githubusercontent.com/u/136939439?v=4"} 
         div {class:"nav", id: "title",
-            img {id:"logo", src: "https://avatars.githubusercontent.com/u/136939439?v=4"} 
             h2 {id:"logo-text", "Ec web!"}
             Link { to: Route::Presentacion {},
                 h4 {"Principal"}
