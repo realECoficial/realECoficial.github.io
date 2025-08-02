@@ -140,9 +140,9 @@ pub fn Seccion_estudio_rust() -> Element {
 
             h1 {"Seccion Estudios Generales"}
             a {target:"_blank",href: "https://www.rust-lang.org/", 
-                h2 {  "Rust: Chapter 9." }
+                h2 {  "Rust: Chapter 10." }
                 ol {
-                    li {a{target:"_blank", href:"https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator","A Shortcut for Propagating Errors: the ? Operator"}} 
+                    li {a{target:"_blank", href:"https://doc.rust-lang.org/book/ch10-00-generics.html","Generic Types, Traits, and Lifetimes"}} 
                 } 
             }
             a {target:"_blank",href: "https://www.codewars.com/users/realECoficial", 
@@ -160,14 +160,14 @@ pub fn Seccion_estudio_rust() -> Element {
                 } 
             } 
             a {target:"_blank",href: "https://www.susanrigetti.com/philosophy" , 
-                h2 {  "Filosofia: " }
+                h2 {  "Filosofia: Think (cap 71)" }
             } 
                 ol {
                     li {a{target:"_blank", href: ESTUDIO1,"Think. A Compelling Introduction To Philosophy"}} 
                 } 
         
             a {target:"_blank",href: "https://www.susanrigetti.com/math" , 
-                h2 {  "Matematicas." }
+                h2 {  "Matematicas. (cap 1)" }
             } 
                 ol {
                     li {a{target:"_blank", href: ESTUDIO2,"Why Math?"}} 
