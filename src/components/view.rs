@@ -172,6 +172,14 @@ pub fn Seccion_estudio_rust() -> Element {
                 ol {
                     li {a{target:"_blank", href: ESTUDIO2,"Why Math?"}} 
                 } 
+            h1 {"Electivos"}
+            a {target:"_blank",href: "https://www.raylib.com/cheatsheet/cheatsheet.html" , 
+                h2 {  "Raylib" }
+            } 
+                ol {
+                    li {a{target:"_blank", href: "https://www.raylib.com/examples.html","Raylib in c"}} 
+                } 
+        
         }
     }
 }
