@@ -140,9 +140,9 @@ pub fn Seccion_estudio_rust() -> Element {
 
             h1 {"Seccion Estudios Generales"}
             a {target:"_blank",href: "https://www.rust-lang.org/", 
-                h2 {  "Rust: Chapter 10." }
+                h2 {  "Rust: Chapter 10.2." }
                 ol {
-                    li {a{target:"_blank", href:"https://doc.rust-lang.org/book/ch10-00-generics.html","Generic Types, Traits, and Lifetimes"}} 
+                    li {a{target:"_blank", href:"https://doc.rust-lang.org/book/ch10-02-traits.html#trait-bound-syntax","Trait Bound Syntax"}} 
                 } 
             }
             a {target:"_blank",href: "https://www.codewars.com/users/realECoficial", 
