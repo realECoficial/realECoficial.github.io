@@ -170,10 +170,11 @@ pub fn Seccion_estudio_rust() -> Element {
                 } 
         
             a {target:"_blank",href: "https://www.susanrigetti.com/math" , 
-                h2 {  "Matematicas. (cap 1)" }
+                h2 {  "Matematicas." }
             } 
                 ol {
-                    li {a{target:"_blank", href: ESTUDIO2,"Why Math?"}} 
+                    li {a{target:"_blank", href: "https://www.khanacademy.org/math/get-ready-for-algebra-i/x127ac35e11aba30e:get-ready-for-equations-inequalities","Khan Academy"}} 
+                    li {a{target:"_blank", href: ESTUDIO2,"Why Math? (i solve just 1 problem)"}} 
                 } 
             h1 {"Electivos"}
             a {target:"_blank",href: "https://www.raylib.com/cheatsheet/cheatsheet.html" , 
