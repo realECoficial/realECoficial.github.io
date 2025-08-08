@@ -149,9 +149,10 @@ pub fn Seccion_estudio_rust() -> Element {
                 h2{"Codewars: Ejercicios hechos."}
                  
                 ol {
-                    li {a{target:"_blank", href:"https://www.codewars.com/kata/5259b20d6021e9e14c0010d4","Reverse words"}} 
-                    li {a{target:"_blank", href:"https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0","Remove First and Last Character"}} 
-                    li {a{target:"_blank", href:"https://www.codewars.com/kata/589478160c0f8a40870000bc","Area of an arrow"}} 
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/513e08acc600c94f01000001","RGB To Hex Conversion (5 kyu PB Fri Aug 8 01:19:43 AM 2025)"}} 
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/5259b20d6021e9e14c0010d4","Reverse words (7 kyu)"}} 
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0","Remove First and Last Character (8 kyu)"}} 
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/589478160c0f8a40870000bc","Area of an arrow (7 kyu)"}} 
                 } 
             } 
             a {target:"_blank",href: "https://dioxuslabs.com/", 
