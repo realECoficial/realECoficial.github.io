@@ -173,8 +173,8 @@ pub fn Seccion_estudio_rust() -> Element {
                 h2 {  "Matematicas." }
             } 
                 ol {
-                    li {a{target:"_blank", href: "https://www.khanacademy.org/math/get-ready-for-algebra-i/x127ac35e11aba30e:get-ready-for-equations-inequalities","Khan Academy"}} 
-                    li {a{target:"_blank", href: ESTUDIO2,"Why Math? (i solve just 1 problem)"}} 
+                    li {a{target:"_blank", href: "https://www.khanacademy.org/math/get-ready-for-algebra-i/x127ac35e11aba30e:get-ready-for-equations-inequalities/x127ac35e11aba30e:combining-like-terms/v/simplifying-expressions-involving-rational-numbers","Khan Academy"}} 
+                    li {a{target:"_blank", href: ESTUDIO2,"Why Math? (i just solve the 1th problem)"}} 
                 } 
             h1 {"Electivos"}
             a {target:"_blank",href: "https://www.raylib.com/cheatsheet/cheatsheet.html" , 
