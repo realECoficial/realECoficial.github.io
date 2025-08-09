@@ -332,7 +332,7 @@ pub fn Seccion_musica() -> Element {
              
             h2 {"Esto para abajo es de software propietario."} 
             
-            a {target:"_blank", id: "yamete",href: "https://y2mate.as/en-NO0b/", 
+            a {target:"_blank", id: "yamete",href: "https://y2mate.now/en/convert", 
                 h3 {  "Descargalas como mp3." }
             } 
             br {}         
