@@ -225,23 +225,22 @@ pub fn Seccion_libros() -> Element {
     }
 }
 
-#[component]
-pub fn Seccion_linux_general() -> Element {
-    rsx! {
-        br {id: "linux"}         
-        //hr { id: "lineas_separar"} 
-        div {class:"linux", id: "Texto",  
 
-            h1 {"Seccion linux general"}
-            a {target:"_blank",href: "https://github.com/realECoficial/dotfiles", 
-                h2 {  "Dotfiles personales" }
-            } 
-            a {target:"_blank",href: "https://nathan.rs/posts/dioxus-rust/#why-rust-for-front-end-development", 
-                h2 {  "Frontend Rust" }
-            } 
-            
-                 
-        }
+const DIBUJO_1: Asset = asset!("/assets/dibujos/lain.jpg");
+const DIBUJO_2: Asset = asset!("/assets/dibujos/mano.jpg");
+
+#[component]
+pub fn Seccion_dibujos() -> Element {
+    rsx! {
+    
+        div { class: "wallpap",id: "wallpapers",
+
+        h1 {"Dibujos :v"}
+            a{target:"_blank",href: DIBUJO_1,img {src: DIBUJO_1}}  
+            a{target:"_blank",href: DIBUJO_2,img {src: DIBUJO_2}}  
+        } 
+        h2 {"idk why its rotate, i try..."} 
+    
     }
 }
 

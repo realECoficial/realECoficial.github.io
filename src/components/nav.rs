@@ -23,8 +23,8 @@ pub fn NavBar() -> Element {
                 h3 {"Codigo :v"}
             } // <------- add this Link
            */ 
-            Link { to: Route::Seccion_linux_general {}, 
-                h4 {"Linux"}
+            Link { to: Route::Seccion_dibujos {}, 
+                h4 {"Dibujos"}
             } // <------- add this Link
             Link { to: Route::Seccion_util {}, 
                 h4 {"Util"}

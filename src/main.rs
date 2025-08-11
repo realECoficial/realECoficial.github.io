@@ -38,8 +38,8 @@ enum Route {
     Seccion_estudio_rust {},
     #[route("/libros")]
     Seccion_libros{},
-    #[route("/linux")]
-    Seccion_linux_general{},
+    #[route("/dibujos")]
+    Seccion_dibujos{},
     #[route("/util")]
     Seccion_util{},
     #[route("/musica")]
