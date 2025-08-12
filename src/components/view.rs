@@ -149,6 +149,7 @@ pub fn Seccion_estudio_rust() -> Element {
                 h2{"Codewars: Ejercicios hechos."}
                  
                 ol {
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/52efefcbcdf57161d4000091","Count characters in your string (6 kyu)"}} 
                     li {a{target:"_blank", href:"https://www.codewars.com/kata/546f922b54af40e1e90001da","Replace With Alphabet Position (6 kyu)"}} 
                     li {a{target:"_blank", href:"https://www.codewars.com/kata/513e08acc600c94f01000001","RGB To Hex Conversion (5 kyu PB Fri Aug 8 01:19:43 AM 2025)"}} 
                     li {a{target:"_blank", href:"https://www.codewars.com/kata/5259b20d6021e9e14c0010d4","Reverse words (7 kyu)"}} 
