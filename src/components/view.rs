@@ -149,6 +149,7 @@ pub fn Seccion_estudio_rust() -> Element {
                 h2{"Codewars: Ejercicios hechos."}
                 img {src: "https://www.codewars.com/users/realECoficial/badges/large"} 
                 ol {
+                    li {a{target:"_blank", href:"https://www.codewars.com/kata/51fc12de24a9d8cb0e000001","ISBN-10 Validation (5 kyu)"}} 
                     li {a{target:"_blank", href:"https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c","Maximum subarray sum (5 kyu)"}} 
                     li {a{target:"_blank", href:"https://www.codewars.com/kata/52efefcbcdf57161d4000091","Count characters in your string (6 kyu)"}} 
                     li {a{target:"_blank", href:"https://www.codewars.com/kata/546f922b54af40e1e90001da","Replace With Alphabet Position (6 kyu)"}} 
