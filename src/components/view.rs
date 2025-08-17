@@ -176,7 +176,7 @@ pub fn Seccion_estudio_rust() -> Element {
                 h2 {  "Matematicas." }
             } 
                 ol {
-                    li {a{target:"_blank", href: "https://www.khanacademy.org/math/get-ready-for-algebra-i/x127ac35e11aba30e:get-ready-for-equations-inequalities/x127ac35e11aba30e:the-distributive-property-equivalent-expressions/v/factoring-algebraic-expressions","Khan Academy"}} 
+                    li {a{target:"_blank", href: "https://www.khanacademy.org/math/get-ready-for-algebra-i/x127ac35e11aba30e:get-ready-for-equations-inequalities/x127ac35e11aba30e:one-and-two-step-inequalities/v/inequalities-using-multiplication-and-division","Khan Academy"}} 
                     li {a{target:"_blank", href: ESTUDIO2,"Why Math? (i just solve the 1th problem)"}} 
                 } 
             h1 {"Electivos"}
