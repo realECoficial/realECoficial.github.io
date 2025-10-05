@@ -166,7 +166,7 @@ pub fn Seccion_estudio_rust() -> Element {
                 } 
             } 
             a {target:"_blank",href: "https://www.susanrigetti.com/philosophy" , 
-                h2 {  "Filosofia: Think (cap 325)" }
+                h2 {  "Filosofia: Think (cap 340)" }
             } 
                 ol {
                     li {a{target:"_blank", href: ESTUDIO1,"Think. A Compelling Introduction To Philosophy"}} 
