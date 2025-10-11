@@ -205,24 +205,23 @@ pub fn Seccion_libros() -> Element {
         //hr { id: "lineas_separar"} 
         div {class:"libros", id: "Texto",  
 
-            h1 {"Repositorio de libros."}
-            a {target:"_blank",href: LIBRO1, 
-                h2 {  "Roberto Bolaño - Los detectives salvajes" }
-            } 
+            h1 {"Repositorio de libros. (Leidos o pendientes)"}
              
             a {target:"_blank",href: MARCUS , 
-                h2 {  "Marcus Aurelius - Meditations." }
+                h2 {  "Marcus Aurelius - Meditations. (Leido en ingles, falta en español)" }
             } 
              
-                 
             a {target:"_blank",href: LIBRO2, 
                 h2 {  "Osamu Dazai - Indigno de ser humano" }
             } 
             a {target:"_blank",href: "https://archive.org/details/wall0000haus/page/4/mode/1up", 
-                h2 {  "The wall - Haushofer, Marlen, 1920-1970" }
+                h2 {  "The wall - Haushofer, Marlen, 1920-1970 (pendiente)" }
             } 
-            a {target:"_blank",href: LIBRO3, 
-                h2 {  "Nueva gramática básica de la lengua española" }
+            a {target:"_blank",href: "https://www.antartica.cl/tokio-blues-9789563602074.html", 
+                h2 {  "Tokio Blues - Hikari Murakami (Leido)" }
+            } 
+            a {target:"_blank",href: "https://www.amazon.com/-/es/Sputnik-amor-Spanish-Haruki-Murakami/dp/8483835169", 
+                h2 {  "Sputnik, mi amor - Hikari Murakami (Leido)" }
             } 
         }
     }
@@ -281,7 +280,7 @@ pub fn Seccion_util() -> Element {
 }
 
 //musica
-const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
+/*const MUSIC1: Asset = asset!("/assets/musica/Ocean girl _ perfect world.mp3");
 const MUSIC2: Asset = asset!("/assets/musica/65_saves.mp3");
 const MUSIC3: Asset = asset!("/assets/musica/tasty_trugictra.mp3");
 const MUSIC4: Asset = asset!("/assets/musica/Substance - Them Phibez.mp3");
@@ -289,7 +288,7 @@ const MUSIC5: Asset = asset!("/assets/musica/NoRedeemingQualities.mp3");
 const MUSIC6: Asset = asset!("/assets/musica/YOU.mp3");
 const MUSIC7: Asset = asset!("/assets/musica/Madwreck-Ride.mp3");
 const MUSIC8: Asset = asset!("/assets/musica/海神-Watazumi-.mp3");
-
+*/
 
 #[component]
 pub fn Seccion_musica() -> Element {
@@ -301,100 +300,15 @@ pub fn Seccion_musica() -> Element {
 
         div {class:"musica", id: "Texto",  
 
-            h2 {"DISCLAIMER: quisiera que no utilicen plataformas de streaming (pagadas o no) de mùsica. No se merecen tu tiempo u dinero."}
-            h3 {"Si quieren escuchar musica les recomiendo que la descarguen o se la compren,"}
-            h3 {"le da valor agregado."} 
-            h3 {"(Esta primera parte se puede escuchar aca mismo, despues es todo youtube.)"} 
+            h2 {"Musica!, tengo bandcamp y soundcloud."}
             br {}         
                 
-            a {target:"_blank", id: "yamete",href: "https://www.music-map.de/", 
-            h2 {  "PAGINA PARA VER MAPA HISTORICO DE LAS BANDAS QUE ESCUCHAS." }
+            a {target:"_blank", id: "yamete",href: "https://realec.bandcamp.com/music", 
+            h2 {  "Bandcamp" }
             } 
-            br {}         
-            ol { class:"musica-local",
-                li{a {target:"_blank",href: MUSIC1,"Ocean_girl - perfect world."}}
-            br {}         
-                li{a {target:"_blank",href: MUSIC2,"65 save"}}
-            br {}         
-                li{a {target:"_blank",href: MUSIC3,"Trugictra - Tasty (Fastracker)"}}
-            br {}         
-                li{a {target:"_blank",href: MUSIC4,"Substance - Them Phibez"}}
-            br {}         
-                li{a {target:"_blank",href: MUSIC5,"40k! - NoRedeemingQualities"}}
-            br {}         
-                li{a {target:"_blank",href: MUSIC6,"Harito - YOU"}}
-            br {}         
-                li{a {target:"_blank",href: MUSIC7,"Madwreck - Ride (Fastracker)"}}
-            
-            br {}         
-                li{a {target:"_blank",href: MUSIC8,"海神 - Watazumi"}}
+            a {target:"_blank", id: "yamete",href: "https://soundcloud.com/ecirl", 
+            h2 {  "Soundcloud" }
             } 
-             
-           // seccion youtube 
-             
-            h2 {"Esto para abajo es de software propietario."} 
-            
-            a {target:"_blank", id: "yamete",href: "https://y2mate.now/en/convert", 
-                h3 {  "Descargalas como mp3." }
-            } 
-            br {}         
-            ol {class:"musica-youtube",
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=-NtjNCM0Kn4&list=RD-NtjNCM0Kn4&start_radio=1","Lamp - 君が泣くなら"}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=FGryJ9YTQzE&list=RDFGryJ9YTQzE&start_radio=1","Lamp - A都市の秋"}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=AJdTBPuZkHU&list=RDAJdTBPuZkHU&start_radio=1","Lamp - Yume Utsutsu"}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=pXuZGo60sq8&list=RDpXuZGo60sq8&start_radio=1","the pillows - Bran-new Lovesong "}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=xB2K-riHfSc&list=RDxB2K-riHfSc&start_radio=1","the pillows - LAST DINOSAUR"}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=p-SWkpGKdP8&list=RDp-SWkpGKdP8&start_radio=1","American Football - Never Meant"}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=DMjMuWkAnPc","Trugictra - haparanda.mod (527 kb) (Official Video)"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=aoTZmnF5Wg8","Trugictra - real_eyez.mod (346 kb) (Official Video)"}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=1Mf8dn1dtK8","Trugictra - acid32.mod (234 kb) (Official Video)"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=XNYpjr4lxqU","Trugictra - shot_provoking.mod (362 kb) (Official Video)"}}
-             
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=_LaxE0mxT7I","Trugictra - lenheetii.mod (413 kb) (Official Video)"}}
-
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA","Susquatch - awakening at daybreak"}}
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=Kh3L7u7yuyA","save file 2"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=1Q0Fd66kgZM","Alaska - The Vortex / Invisible"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=a_6quQ994JI","Sōtaisei Riron ( 相対性理论)-Synchroniciteen (Full Album)"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=ODysC7SM_Yk","相対性理論 - 気になるあの娘"}}
-
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=XOgFYjwEopo","rosenbridge"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=Q6YV_rpQ4Jk&list=PLB80A16AFA79B0379&index=3","Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Specials"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=VEUZGwwP0FY&list=PLB80A16AFA79B0379&index=9","Yu-Gi-Oh! Ultimate Masters Edition 2006 OST - Level 2 Monster"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=gpyuAT9q06c","rocket coaster"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=wHNSSbGDrfo","Owain Panchiko (DEATHMETAL Remix)"}}
-            
-            br {}         
-                li{a {target:"_blank",href: "https://www.youtube.com/watch?v=DuWQk4eA3lU","'Linebreak' (Amiga .mod!)"}}
             
 
             } 
@@ -406,7 +320,6 @@ pub fn Seccion_musica() -> Element {
         }
         
     }
-}
 /*
 #[component]
 pub fn Seccion_futuro() -> Element {
