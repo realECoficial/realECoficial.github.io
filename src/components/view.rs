@@ -131,6 +131,8 @@ pub fn Indice() -> Element {
 
 const ESTUDIO1: Asset = asset!("/assets/libros/Think. A Compelling Introduction To Philosophy.pdf");
 const ESTUDIO2: Asset = asset!("/assets/libros/Why Math_ (Undergraduate Texts in Mathematics).pdf");
+const ESTUDIO3: Asset = asset!("/assets/libros/El poema de la fuerza, la illiada (Simone Weil).pdf");
+
 #[component]
 pub fn Seccion_estudio_rust() -> Element {
     rsx! {
@@ -166,10 +168,13 @@ pub fn Seccion_estudio_rust() -> Element {
                 } 
             } 
             a {target:"_blank",href: "https://www.susanrigetti.com/philosophy" , 
-                h2 {  "Filosofia: Think (cap 556)" }
+                h2 {  "Filosofia: Think (cap 556), El poema de la fuerza (9 a 10)" }
             } 
                 ol {
                     li {a{target:"_blank", href: ESTUDIO1,"Think. A Compelling Introduction To Philosophy"}} 
+                } 
+                ol {
+                    li {a{target:"_blank", href: ESTUDIO3,"El poema de la fuerza, la illiada - Simone Weil"}} 
                 } 
         
             a {target:"_blank",href: "https://www.susanrigetti.com/math" , 
